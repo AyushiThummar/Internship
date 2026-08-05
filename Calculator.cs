@@ -11,15 +11,6 @@ namespace ConsoleApp1
         public int num1 { get; set; }
         public int num2 { get; set; }
 
-        public static int Exception(string? r)
-        {
-            if (string.IsNullOrWhiteSpace(r))
-            {
-                return 0;
-            }
-            int num = int.Parse(r);
-            return num;
-        }
 
         //public Calculator() {
         //    Console.Write("Enter value of number 1 : ");
@@ -96,17 +87,18 @@ namespace ConsoleApp1
         public Calculator()
         {
             Console.Write("Enter value of number 1 : ");
-            int num1 = Calculator.Exception(Console.ReadLine());
+            string num1 = Constructor.Exception(Console.ReadLine());
+            //int num1 = Console.ReadLine().Exception();
             Console.Write("Enter value of number 2 : ");
-            int num2 = Calculator.Exception(Console.ReadLine());
+            string num2 = Constructor.Exception(Console.ReadLine());
 
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiplication");
             Console.WriteLine("4. Division");
             Console.WriteLine("Enter your choice of operation : ");
-            int choice = Calculator.Exception(Console.ReadLine());
-
+            string choice = Constructor.Exception(Console.ReadLine());
+                
             switch (choice)
             {
                 case 1:
