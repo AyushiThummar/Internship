@@ -87,20 +87,21 @@ namespace ConsoleApp1
         public Calculator()
         {
             Console.Write("Enter value of number 1 : ");
-            string num1 = Constructor.Exception(Console.ReadLine());
+            int num1 = Constructor.Exception(Console.ReadLine());
             //int num1 = Console.ReadLine().Exception();
             Console.Write("Enter value of number 2 : ");
-            string num2 = Constructor.Exception(Console.ReadLine());
+            int num2 = Constructor.Exception(Console.ReadLine());
 
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiplication");
             Console.WriteLine("4. Division");
             Console.WriteLine("Enter your choice of operation : ");
-            string choice = Constructor.Exception(Console.ReadLine());
+            int choice = Constructor.Exception(Console.ReadLine());
                 
             switch (choice)
             {
+                // Need to convert num1 and num2 to integers before performing arithmetic operations
                 case 1:
                     Console.WriteLine($"Addition of 2 numbers is : {num1 + num2}");
                     break;
@@ -113,7 +114,7 @@ namespace ConsoleApp1
                 case 4:
                     if (num2 != 0)
                     {
-                        Console.WriteLine("$Division of 2 numbers is : {num1 / num2}");
+                        Console.WriteLine($"Division of 2 numbers is : {num1 / num2}");
                     }
                     else
                     {

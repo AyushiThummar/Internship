@@ -21,22 +21,34 @@ namespace ConsoleApp1
         public int max { get; set; }
         public int round { get; set; }
 
-        //public static int Exception(string? r)
+        public static int Exception(string? choice)
+        {
+            if (string.IsNullOrWhiteSpace(choice))
+            {
+                Environment.Exit(0);
+            }
+            //return int.Parse(choice);
+            int number;
+            if (int.TryParse(choice, out number))
+            {
+                return number;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+                Environment.Exit(0);
+                return 0; // This line will never be reached, but is required to satisfy the compiler.
+            }
+        }
+        
+
+        //public static string Exception(string? r)
         //{
         //    if (string.IsNullOrWhiteSpace(r))
         //    {
-        //        return 0;
+        //        return "";
         //    }
-        //    int num = int.Parse(r);
-        //    return num;
+        //    return r;
         //}
-        public static string Exception(string? r)
-        {
-            if (string.IsNullOrWhiteSpace(r))
-            {
-                return "";
-            }
-            return r;
-        }
     }
 }
