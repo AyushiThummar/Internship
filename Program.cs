@@ -38,8 +38,11 @@ public class Program
         //var c1 = ConsoleApp1.Tuple.Chocolate();
         //Console.WriteLine($"Chocolate Name: {c1.Item1}, Price: {c1.Item2}");
 
-        // TupleCalculator.cs
-        var tc1 = TupleCalculator.Calculate();
-        Console.WriteLine($"Result: {tc1.Result}, Operation: {tc1.Operation}");
+        //// TupleCalculator.cs
+        //var tc1 = TupleCalculator.Calculate();
+        //Console.WriteLine($"Result: {tc1.Result}, Operation: {tc1.Operation}");
+
+        // Boolean.cs
+        ConsoleApp1.Boolean b1 = new ConsoleApp1.Boolean();
     }
 }
