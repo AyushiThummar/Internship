@@ -42,7 +42,17 @@ public class Program
         //var tc1 = TupleCalculator.Calculate();
         //Console.WriteLine($"Result: {tc1.Result}, Operation: {tc1.Operation}");
 
-        // Boolean.cs
-        ConsoleApp1.Boolean b1 = new ConsoleApp1.Boolean();
+        //// Boolean.cs
+        //ConsoleApp1.Boolean b1 = new ConsoleApp1.Boolean();
+
+        // DisplayCalculator.cs
+        Console.WriteLine("Enter value of number 1 : ");
+        int num1 = Constructor.Exception(Console.ReadLine());
+        Console.WriteLine("Enter value of number 2 : ");
+        int num2 = Constructor.Exception(Console.ReadLine());
+        Console.WriteLine("Enter your choice of operation (+,-,*,/)");
+        string op = Console.ReadLine() ?? "";
+        int result = DisplayCalculator.Display(num1, num2, op);
+        Console.WriteLine("Result :- " +  result);
     }
 }
