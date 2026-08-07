@@ -11,16 +11,16 @@ namespace ConsoleApp1
         public static (int Result, string Operation) Calculate()
         {
             Console.Write("Enter number 1 : ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num1 = Constructor.Exception(Console.ReadLine());
             Console.Write("Enter number 2 : ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Constructor.Exception(Console.ReadLine());
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiplication");
             Console.WriteLine("4. Division");
 
             Console.Write("Enter your choice of operation : ");
-            int choice = Convert.ToInt32(Console.ReadLine());
+            int choice = Constructor.Exception(Console.ReadLine());
             switch (choice)
             {
                 case 1:
