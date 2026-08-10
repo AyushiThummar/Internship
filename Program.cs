@@ -63,11 +63,35 @@ public class Program
         //int y;
         //RefOut.OutExample(out y);
         //Console.WriteLine("After calling the method, y = " + y);
-        
-        // MinMaxP.cs
-        Console.WriteLine("Enter your salary : ");
-        double salary = DisplayCalculator.Exception(Console.ReadLine(), 500000);
-        MinMaxP.CalculateSalary(salary);
+
+        //// MinMaxP.cs
+        //Console.WriteLine("Enter your salary : ");
+        //double salary = DisplayCalculator.Exception(Console.ReadLine(), 500000);
+        //MinMaxP.CalculateSalary(salary);
+
+        //// InterfaceExample.cs
+        //InterfaceExample.College c1 = new InterfaceExample.College();
+        //c1.Event();
+        //InterfaceExample.Admin a1 = new InterfaceExample.Admin();
+        //a1.Event();
+
+        //// PolymorphismExample.cs
+        //PolymorphismExample.Fruit f1 = new PolymorphismExample.Fruit();
+        //f1.Color();
+        //PolymorphismExample.Banana b1 = new PolymorphismExample.Banana();
+        //b1.Color();
+        //PolymorphismExample.Apple a1 = new PolymorphismExample.Apple();
+        //a1.Color();
+
+        //// AbstractionExample.cs
+        ////AbstractionExample.Clothes c1 = new AbstractionExample.Clothes(); // We can't create instance of abstract class.
+        //AbstractionExample.Shirt s1 = new AbstractionExample.Shirt();
+        //s1.Fabric();
+        //s1.Price();
+        //AbstractionExample.Jeans j1 = new AbstractionExample.Jeans();
+        //j1.Fabric();
+        //j1.Price();
+
         
     }
 }
