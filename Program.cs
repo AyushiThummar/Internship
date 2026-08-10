@@ -45,14 +45,29 @@ public class Program
         //// Boolean.cs
         //ConsoleApp1.Boolean b1 = new ConsoleApp1.Boolean();
 
-        // DisplayCalculator.cs
-        Console.WriteLine("Enter value of number 1 : ");
-        int num1 = Constructor.Exception(Console.ReadLine());
-        Console.WriteLine("Enter value of number 2 : ");
-        int num2 = Constructor.Exception(Console.ReadLine());
-        Console.WriteLine("Enter your choice of operation (+,-,*,/)");
-        string op = Console.ReadLine() ?? "";
-        int result = DisplayCalculator.Display(num1, num2, op);
-        Console.WriteLine("Result :- " +  result);
+        //// DisplayCalculator.cs
+        //Console.WriteLine("Enter value of number 1 : ");
+        //int num1 = DisplayCalculator.Exception(Console.ReadLine(),20);
+        //Console.WriteLine("Enter value of number 2 : ");
+        //int num2 = DisplayCalculator.Exception(Console.ReadLine(),5);
+        //Console.WriteLine("Enter your choice of operation (+,-,*,/)");
+        //string opInput = Console.ReadLine() ?? "";
+        //string op = string.IsNullOrWhiteSpace(opInput) ? "+" : opInput;
+        //DisplayCalculator.Display(num1, num2, op);
+
+        //// RefOut.cs
+        //int x = 10;
+        //Console.WriteLine("Before calling the method, x = " + x);
+        //RefOut.RefExample(ref x);
+        //Console.WriteLine("After calling the method, x = " + x);
+        //int y;
+        //RefOut.OutExample(out y);
+        //Console.WriteLine("After calling the method, y = " + y);
+        
+        // MinMaxP.cs
+        Console.WriteLine("Enter your salary : ");
+        double salary = DisplayCalculator.Exception(Console.ReadLine(), 500000);
+        MinMaxP.CalculateSalary(salary);
+        
     }
 }
