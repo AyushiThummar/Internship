@@ -18,10 +18,12 @@ public class Program
         //// Calculator.cs
         //Calculator calculator = new Calculator();
 
+
         //// MethodOverloading.cs
         //Console.WriteLine("Addition of int a,b : " + MethodOverloading.Addition(10, 20));
         //Console.WriteLine("Addition of int a,b,c : " + MethodOverloading.Addition(10, 20, 30));
         //Console.WriteLine("Addition of double a,b : " + MethodOverloading.Addition(10.5, 20.5));
+
 
         //// Inheritance.cs
         //Inheritance.Chocolate c1 = new Inheritance.Chocolate();
@@ -38,12 +40,15 @@ public class Program
         //var c1 = ConsoleApp1.Tuple.Chocolate();
         //Console.WriteLine($"Chocolate Name: {c1.Item1}, Price: {c1.Item2}");
 
+
         //// TupleCalculator.cs
         //var tc1 = TupleCalculator.Calculate();
         //Console.WriteLine($"Result: {tc1.Result}, Operation: {tc1.Operation}");
 
+
         //// Boolean.cs
         //ConsoleApp1.Boolean b1 = new ConsoleApp1.Boolean();
+
 
         //// DisplayCalculator.cs
         //Console.WriteLine("Enter value of number 1 : ");
@@ -55,6 +60,7 @@ public class Program
         //string op = string.IsNullOrWhiteSpace(opInput) ? "+" : opInput;
         //DisplayCalculator.Display(num1, num2, op);
 
+
         //// RefOut.cs
         //int x = 10;
         //Console.WriteLine("Before calling the method, x = " + x);
@@ -64,16 +70,19 @@ public class Program
         //RefOut.OutExample(out y);
         //Console.WriteLine("After calling the method, y = " + y);
 
+
         //// MinMaxP.cs
         //Console.WriteLine("Enter your salary : ");
         //double salary = DisplayCalculator.Exception(Console.ReadLine(), 500000);
         //MinMaxP.CalculateSalary(salary);
+
 
         //// InterfaceExample.cs
         //InterfaceExample.College c1 = new InterfaceExample.College();
         //c1.Event();
         //InterfaceExample.Admin a1 = new InterfaceExample.Admin();
         //a1.Event();
+
 
         //// PolymorphismExample.cs
         //PolymorphismExample.Fruit f1 = new PolymorphismExample.Fruit();
@@ -82,6 +91,7 @@ public class Program
         //b1.Color();
         //PolymorphismExample.Apple a1 = new PolymorphismExample.Apple();
         //a1.Color();
+
 
         //// AbstractionExample.cs
         ////AbstractionExample.Clothes c1 = new AbstractionExample.Clothes(); // We can't create instance of abstract class.
@@ -92,6 +102,38 @@ public class Program
         //j1.Fabric();
         //j1.Price();
 
-        
+
+        //// MultipleInterface.cs
+        //MultipleInterface.ImplementInterface i1 = new MultipleInterface.ImplementInterface();
+        //i1.FirstMethod();
+        //i1.SecondMethod();
+
+
+        //// EncapsulationExample.cs
+        //EncapsulationExample.Student s1 = new EncapsulationExample.Student();
+        //s1.Marks = 99;
+        //Console.WriteLine("Marks :- " + s1.Marks);
+        //EncapsulationExample.Student1 n1 = new EncapsulationExample.Student1();
+        //n1.Name = "Ayushi";
+        //Console.WriteLine("Name :- " + n1.Name);
+        //EncapsulationExample.User u1 = new EncapsulationExample.User();
+        //u1.Username = "abc";
+        //Console.WriteLine("Username :- " + u1.Username);
+
+
+        //// Enumerations.cs
+        //Enumerations.WeekDays e1 = Enumerations.WeekDays.Sunday;
+        //Console.WriteLine("My favorite day is " + e1);
+        //int day = (int) Enumerations.WeekDays.Sunday;
+        //Console.WriteLine("Sunday is on day number " + day);
+        //int mon = (int) Enumerations.Months.August;
+        //Console.WriteLine("August with value assign by me " + mon);
+        //Enumerations l1 = new Enumerations();
+        //l1.DisplayLevel();
+
+        //// Exceptions.cs
+        ////Exceptions.Divide();
+        ////Exceptions.CheckAge(15);
+        //Exceptions.CheckAge(20);
     }
 }
