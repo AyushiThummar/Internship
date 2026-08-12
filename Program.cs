@@ -3,6 +3,7 @@
 
 using ConsoleApp1;
 using System;
+using static ConsoleApp1.GenericExample;
 
 public class Program
 {
@@ -131,9 +132,57 @@ public class Program
         //Enumerations l1 = new Enumerations();
         //l1.DisplayLevel();
 
+
         //// Exceptions.cs
         ////Exceptions.Divide();
         ////Exceptions.CheckAge(15);
         //Exceptions.CheckAge(20);
+
+
+        //// JaggedArray.cs
+        //JaggedArray j1 = new JaggedArray();
+        //j1.Display();
+        //JaggedArray j2 = new JaggedArray();
+        //j2.Display2();
+
+
+        //// GenericExample.cs
+        //GenericExample.DataStore<string> cities = new GenericExample.DataStore<string>();
+        //cities.AddOrUpdate(0, "Mumbai");
+        //cities.AddOrUpdate(1, "Taiwan");
+        //cities.AddOrUpdate(2, "London");
+        ////Console.WriteLine(cities.GetData(100));
+        //Console.WriteLine(cities.GetData(1) + " is on index 1.");
+        //GenericExample.DataStore<int> empIds = new GenericExample.DataStore<int>();
+        //empIds.AddOrUpdate(0, 50);
+        //empIds.AddOrUpdate(1, 565);
+        //empIds.AddOrUpdate(2, 4689);
+        //Console.WriteLine(empIds.GetData(0) + " is on index 0.");
+        //GenericExample.Printer p1 = new GenericExample.Printer();
+        //p1.Print<int>(100);
+        //p1.Print<int>(100);
+        //p1.Print(200); // type infer from the specified value
+        //p1.Print<string>("Hello");
+        //p1.Print("World!"); // type infer from the specified value
+
+
+        //// ArrayListExample.cs
+        //ArrayListExample a1 = new ArrayListExample();
+        //a1.Display();
+        //a1.DisplayInsert();
+        //a1.DisplayInsertRange();
+        //a1.DisplayRemove();
+
+
+        // ListExample.cs
+        ListExample l1 = new ListExample();
+        l1.DisplayListInt();
+        l1.DisplayListString();
+        l1.DisplayCities();
+        l1.DisplayInsert();
+        l1.DisplayRemove();
+
+        
+
     }
 }
