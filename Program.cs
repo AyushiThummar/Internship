@@ -174,15 +174,33 @@ public class Program
         //a1.DisplayRemove();
 
 
-        // ListExample.cs
-        ListExample l1 = new ListExample();
-        l1.DisplayListInt();
-        l1.DisplayListString();
-        l1.DisplayCities();
-        l1.DisplayInsert();
-        l1.DisplayRemove();
+        //// ListExample.cs
+        //ListExample l1 = new ListExample();
+        //l1.DisplayListInt();
+        //l1.DisplayListString();
+        //l1.DisplayCities();
+        //l1.DisplayInsert();
+        //l1.DisplayRemove();
 
-        
 
+        //// DictionaryExample.cs
+        //DictionaryExample d1 = new DictionaryExample();
+        //d1.DisplayDictionary();
+        //d1.DisplayCities();
+        //d1.UpdateDictionary();
+        //d1.RemoveDictionary();
+
+
+        //// StackExample.cs
+        //StackExample s1 = new StackExample();
+        //s1.DisplayStack();
+        //s1.DisplayStack2();
+        //s1.PopStack();
+        //s1.PeekStack();
+
+
+        // QueueExample.cs
+        QueueExample q1 = new QueueExample();
+        q1.DisplayQueue();
     }
 }
