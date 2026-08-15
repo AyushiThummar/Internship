@@ -3,6 +3,7 @@
 
 using ConsoleApp1;
 using System;
+using static ConsoleApp1.DelegateExample;
 using static ConsoleApp1.GenericExample;
 
 public class Program
@@ -199,8 +200,40 @@ public class Program
         //s1.PeekStack();
 
 
-        // QueueExample.cs
-        QueueExample q1 = new QueueExample();
-        q1.DisplayQueue();
+        //// QueueExample.cs
+        //QueueExample q1 = new QueueExample();
+        //q1.DisplayQueue();
+
+
+        //// DelegateExample.cs
+        //MyDelegate del = ClassA.MethodA;
+        //del("Hello World! ClassA");
+        //del = ClassB.MethodB;
+        //del("Hello World! ClassB");
+        //del=(string msg) => Console.WriteLine("Called lambda function. "+msg);
+        //del("Hello World!");
+
+        //MyDelegateInt del1 = ClassAI.MethodA;
+        //MyDelegateInt del2 = ClassBI.MethodB;
+        //MyDelegateInt deli = del1 + del2;
+        //Console.WriteLine(deli());
+
+
+        //// FuncDelegate.cs
+        //Func<int, int, int> add = FuncDelegate.Sum;
+        //int result = add(10, 10);
+        //Console.WriteLine(result);
+        //Console.WriteLine(FuncDelegate.getRandomNumber());
+        //Console.WriteLine(FuncDelegate.Add(10, 20));
+
+        //Action<int> printActionDel = FuncDelegate.ConsolePrint;
+        //printActionDel(10);
+
+        //Predicate<string> isUpper = FuncDelegate.IsUpperCase;
+        //bool result = isUpper("hello world!!");
+        //Console.WriteLine(result);
+
+
+        // 
     }
 }
