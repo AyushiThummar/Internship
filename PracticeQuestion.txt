@@ -1,0 +1,77 @@
+﻿Internship :- 
+
+1. Method + User Input
+Write a C# program that takes two integers from the user and creates an Add(int a, int b) method that returns their sum.
+
+2. Method Overloading
+Create two overloaded Add() methods:
+Add(int a, int b)
+Add(int a, int b, int c)
+Both should return the sum.
+
+3. Constructor
+Create a Student class with Name and Age. Create a constructor that initializes both values and display them.
+
+4. Inheritance
+Create a Chocolate parent class with Taste and Price(). Create a DarkChocolate child class with Name, inherit from Chocolate, and display all values.
+
+5. Exception Handling
+Take a number from the user using Convert.ToInt32() inside try-catch. Handle FormatException and display an appropriate message for invalid input.
+
+6. Exception Handling + Method
+Create GetNumber(string input) that converts the input to an integer using try-catch. Return the number if valid, otherwise print an error and return 0.
+
+7. Func + Lambda
+Create a Func<int, int, int> called Multiply using a lambda expression. Multiply two numbers and display the result.
+
+8. Action + Lambda
+Create an Action<int> called PrintSquare using a lambda expression. Calculate and display the square of a given number.
+
+9. Predicate + Lambda
+Create a Predicate<int> IsEven using a lambda expression that returns true for even numbers and false for odd numbers. Test it with 10 and 7 and display the results.
+
+10. Delegate + Method
+Create an Add(int a, int b) method that returns the sum. Assign the method to a Func<int, int, int> delegate and call it with 10 and 20. Display the result.
+
+
+
+-> C# Anonymous Method — Practice Questions
+
+1. Print a Message: Create an Action<string> Anonymous Method that accepts a name and prints Hello, C#!. 
+
+2. Print a Number: Create an Action<int> Anonymous Method that accepts a number and prints Number = 25.
+
+3. Square a Number: Create an Action<int> Anonymous Method that accepts a number and prints its square. 
+Example: Input 5 → Output Square = 25.
+
+4. Add Two Numbers: Create an Action<int, int> Anonymous Method that accepts two numbers and prints their sum. 
+Example: Input 10, 20 → Output Sum = 30.
+
+5. Check Even/Odd: Create an Action<int> Anonymous Method that checks whether a number is even or odd. 
+Example: Input 8 → Output Even.
+
+6. Find Larger Number: Create an Action<int, int> Anonymous Method that accepts two numbers and prints the larger number. 
+Example: Input 15, 10 → Output Larger = 15.
+
+7. Multiplication Table: Create an Action<int> Anonymous Method that prints the multiplication table of a number from 1 to 10.
+
+8. Multiply Two Numbers using Func: Create a Func<int, int, int> Anonymous Method that returns the multiplication of two numbers. 
+Example: Input 5, 4 → Output 20.
+
+9. Check Number using Predicate: Create a Predicate<int> Anonymous Method that checks whether a number is greater than 50. 
+Example: Input 75 → Output True.
+
+10. Create three Anonymous Methods: Action<int> → print square, 
+Func<int, int, int> → return sum of two numbers, and Predicate<int> → check whether a number is even. 
+Then call all three methods and display their results.
+
+C# Events :- 
+1. BankAccount: Create an event using a custom delegate for MoneyWithdrawn.
+2. BankAccount: Convert the above event to EventHandler.
+3. BankAccount: Use EventHandler<bool> to send withdrawal success status.
+4. BankAccount: Use custom EventArgs to send success status and withdrawal time.
+5. LoginSystem: Create LoginSuccessful event using a custom delegate.
+6. LoginSystem: Convert the event to EventHandler.
+7. LoginSystem: Use EventHandler<bool> to send login status.
+8. LoginSystem: Use custom EventArgs to send login status and login time.
+

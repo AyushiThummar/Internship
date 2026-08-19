@@ -234,6 +234,57 @@ public class Program
         //Console.WriteLine(result);
 
 
-        // 
+        //// EventExample.cs
+       
+        //// Basic Event
+        //static void b1_MoneyWithdrawn()
+        //{
+        //    Console.WriteLine("Notification : Withdrawal completed!");
+        //}
+        //EventExample.BankAccount b1 = new EventExample.BankAccount();
+        //b1.MoneyWithdrawn += b1_MoneyWithdrawn;
+        //b1.Withdraw();
+
+        //// EventHandler
+        //static void b1_MoneyWithdrawn(object? sender, EventArgs e)
+        //{
+        //    Console.WriteLine("Notification : Withdrawal completed!");
+        //}
+        //EventExample.BankAccount b1 = new EventExample.BankAccount();
+        //b1.MoneyWithdrawn += b1_MoneyWithdrawn;
+        //b1.Withdraw();
+
+        //// Event Data
+        //static void b1_MoneyWithdrawn(object? sender, bool isSuccessful)
+        //{
+        //    if (isSuccessful)
+        //    {
+        //        Console.WriteLine("Notification: Withdrawal completed successfully!");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Notification: Withdrawal failed!");
+        //    }
+        //}
+        //EventExample.BankAccount b1 = new EventExample.BankAccount();
+        //b1.MoneyWithdrawn += b1_MoneyWithdrawn;
+        //b1.Withdraw();
+
+        // Custom EventArgs
+        static void b1_MoneyWithdrawn(object? sender, EventExample.ProcessEventArgs e)
+        {
+            if (e.IsSuccessful)
+            {
+                Console.WriteLine("Notification: Withdrawal completed successfully!");
+            }
+            else
+            {
+                Console.WriteLine("Notification: Withdrawal failed!");
+            }
+            Console.WriteLine("Completion Time: " + e.CompletionTime);
+        }
+        EventExample.BankAccount b1 = new EventExample.BankAccount();
+        b1.MoneyWithdrawn += b1_MoneyWithdrawn;
+        b1.Withdraw();
     }
 }
