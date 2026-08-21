@@ -1,0 +1,4 @@
+Hello form FileInfo!
+This content is appended.
+Now i need to show some file information.
+This is demo text.

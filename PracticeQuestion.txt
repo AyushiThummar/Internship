@@ -65,6 +65,8 @@ Example: Input 75 → Output True.
 Func<int, int, int> → return sum of two numbers, and Predicate<int> → check whether a number is even. 
 Then call all three methods and display their results.
 
+
+
 C# Events :- 
 1. BankAccount: Create an event using a custom delegate for MoneyWithdrawn.
 2. BankAccount: Convert the above event to EventHandler.
@@ -74,4 +76,16 @@ C# Events :-
 6. LoginSystem: Convert the event to EventHandler.
 7. LoginSystem: Use EventHandler<bool> to send login status.
 8. LoginSystem: Use custom EventArgs to send login status and login time.
+
+
+Covariance ->  Create a C# program to demonstrate covariance using delegates, 
+where a delegate accepts a Dog object and returns an Animal, and a method returns a more derived type (Dog). 
+Assign the method to the delegate and call it in Main().
+
+Contravariance -> Create a C# program to demonstrate contravariance using delegates, where a delegate accepts a Dog object,
+but the assigned method accepts the base type Animal. 
+Assign the method to the delegate and call it with a Dog object in Main().
+
+Extension methods -> Create a C# program to demonstrate an extension method by creating a Student class
+and a StudentExtensions static class with a DisplayName() method that extends Student and displays the student's name.
 

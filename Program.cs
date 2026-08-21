@@ -1,5 +1,4 @@
 ﻿//// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
 
 using ConsoleApp1;
 using System;
@@ -17,6 +16,10 @@ public class Program
     }*/
     public static void Main(string[] args)
     {
+
+        Console.WriteLine("Hello, World!");
+
+
         //// Calculator.cs
         //Calculator calculator = new Calculator();
 
@@ -235,7 +238,7 @@ public class Program
 
 
         //// EventExample.cs
-       
+
         //// Basic Event
         //static void b1_MoneyWithdrawn()
         //{
@@ -270,21 +273,47 @@ public class Program
         //b1.MoneyWithdrawn += b1_MoneyWithdrawn;
         //b1.Withdraw();
 
-        // Custom EventArgs
-        static void b1_MoneyWithdrawn(object? sender, EventExample.ProcessEventArgs e)
-        {
-            if (e.IsSuccessful)
-            {
-                Console.WriteLine("Notification: Withdrawal completed successfully!");
-            }
-            else
-            {
-                Console.WriteLine("Notification: Withdrawal failed!");
-            }
-            Console.WriteLine("Completion Time: " + e.CompletionTime);
-        }
-        EventExample.BankAccount b1 = new EventExample.BankAccount();
-        b1.MoneyWithdrawn += b1_MoneyWithdrawn;
-        b1.Withdraw();
+        //// Custom EventArgs
+        //static void b1_MoneyWithdrawn(object? sender, EventExample.ProcessEventArgs e)
+        //{
+        //    if (e.IsSuccessful)
+        //    {
+        //        Console.WriteLine("Notification: Withdrawal completed successfully!");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Notification: Withdrawal failed!");
+        //    }
+        //    Console.WriteLine("Completion Time: " + e.CompletionTime);
+        //}
+        //EventExample.BankAccount b1 = new EventExample.BankAccount();
+        //b1.MoneyWithdrawn += b1_MoneyWithdrawn;
+        //b1.Withdraw();
+
+
+        //// FileExample.cs
+        //FileExample f1 = new FileExample();
+        //f1.CreateFile();
+        //f1.WriteFile();
+        //f1.AppendFile();
+        //f1.ReadFile();
+        //f1.ReadAllLines();
+        //f1.CheckFile();
+        //f1.CopyFile();
+        //f1.MoveFile();
+        //f1.DeleteFile();
+
+
+        //// FileInfoExample.cs
+        //FileInfoExample fileInfo = new FileInfoExample();
+        //fileInfo.CreateFile();
+        //fileInfo.WriteFile();
+        //fileInfo.AppendFile();
+        //fileInfo.ReadFile();
+        //fileInfo.CheckFile();
+        //fileInfo.CopyFile();
+        //fileInfo.MoveFile();
+        //fileInfo.DeleteFile();
+        //fileInfo.GetFileInfo();
     }
 }
