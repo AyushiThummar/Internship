@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+
+<body>
+    <h2>The for loop</h2>
+    <p id="demo_for"></p>
+    <script>
+        // When a variable is declared with let or const inside a loop, 
+        // it will only be visible within the loop.
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        let text_for = "";
+        for (let i = 0; i < cars.length; i++) {
+            text_for += cars[i] + "<br>";
+        }
+        document.getElementById("demo_for").innerHTML = text_for;
+    </script>
+
+    <h2>The While loop</h2>
+    <p id="demo_while"></p>
+    <script>
+        let text_while = "";
+        let i = 0;
+        while (i < 10) {
+            text_while += "The number is " + i + "<br>";
+            i++;
+        }
+        document.getElementById("demo_while").innerHTML = text_while;
+    </script>
+
+    <h2>The do... while loop</h2>
+    <p id="demo_dowhile"></p>
+    <script>
+        let text_dowhile = "";
+        let j = 0;
+        do {
+            text_dowhile += "<br> The number is " + j;
+            j++;
+        }
+        while (j < 10);
+        document.getElementById("demo_dowhile").innerHTML = text_dowhile;
+    </script>
+</body>
+
+</html>
