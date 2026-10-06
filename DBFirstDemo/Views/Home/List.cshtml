@@ -10,6 +10,14 @@
     </div>
 }
 
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Message!</strong> @TempData["success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 <h1>Student List</h1>
 
 <p>
@@ -37,8 +45,8 @@
                 <td>@student.StuDob</td>
                 <td>@student.StuPhne</td>
                 <td>
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@student.Roll">Edit</a>|
-                    <a class="btn btn-warning" asp-action="Details" asp-route-id="@student.Roll">Details</a>|
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@student.Roll">Edit</a> |
+                    <a class="btn btn-warning" asp-action="Details" asp-route-id="@student.Roll">Details</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@student.Roll">Delete</a>
                 </td>
             </tr>
