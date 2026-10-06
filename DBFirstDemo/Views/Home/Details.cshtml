@@ -1,0 +1,78 @@
+﻿@model DBFirstDemo.Models.Student
+
+<style>
+    .student-card {
+        width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+        .student-card h1 {
+            margin-bottom: 20px;
+        }
+
+    .student-info dt {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .student-info dd {
+        margin-left: 0;
+        padding: 8px;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+        .buttons a {
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 8px 14px;
+            border-radius: 4px;
+            background-color: #6c757d;
+            color: white;
+        }
+
+            .buttons a:hover {
+                background-color: #495057;
+            }
+</style>
+
+<div class="student-card">
+
+    <h1>Student Details</h1>
+
+    <h4>Student</h4>
+    <hr />
+
+    <dl class="student-info">
+
+        <dt>Roll</dt>
+        <dd>@Model.Roll</dd>
+
+        <dt>Name</dt>
+        <dd>@Model.StuName</dd>
+
+        <dt>Gender</dt>
+        <dd>@Model.StuGender</dd>
+
+        <dt>Date of Birth</dt>
+        <dd>@Model.StuDob</dd>
+
+        <dt>Phone</dt>
+        <dd>@Model.StuPhne</dd>
+
+    </dl>
+
+    <div class="buttons">
+        <a asp-action="Edit" asp-route-id="@Model.Roll">Edit</a>
+        <a asp-action="List">Back to List</a>
+    </div>
+
+</div>
