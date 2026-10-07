@@ -65,6 +65,69 @@ namespace DBFirstDemo.Controllers
             }
             return View(stu);
         }
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            if (id != null)
+            {
+                Student? st = context.Students.FirstOrDefault(item => item.Roll == id);
+                if(st != null)
+                {
+                    return View(st);
+                }
+                else
+                {
+                    TempData["message"] = "Record not found for roll : " + id;
+                    return RedirectToAction("List");
+                }
+            }
+            TempData["message"] = "Please pass roll to edit data.. ";
+            return RedirectToAction("List");
+        }
+        [HttpPost]
+        public IActionResult Edit(Student stu)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Students.Update(stu);
+                context.SaveChanges();
+                TempData["success"] = "Record updated successfully for roll : " + stu.Roll;
+                return RedirectToAction("List");
+            }
+            return View(stu);
+        }
+        [HttpGet]
+        public IActionResult Delete(int? id)
+        {
+            if (id != null)
+            {
+                Student? stu = context.Students.FirstOrDefault(item => item.Roll == id);
+                if (stu != null)
+                {
+                    return View(stu);
+                }
+                else
+                {
+                    TempData["message"] = "Record not found for roll : " + id;
+                    return RedirectToAction("List");
+                }
+            }
+            TempData["message"] = "Please pass roll to delete data.. ";
+            return RedirectToAction("List");
+        }
+        [HttpPost]
+        public IActionResult Delete(Student stu)
+        {
+            if (stu != null)
+            {
+                context.Students.Remove(stu);
+                context.SaveChanges();
+                TempData["success"] = "Data deleted successfully.";
+                return RedirectToAction("List");       
+            }
+            TempData["message"] = "Unable to delete data..";
+            return RedirectToAction("List");
+        }
         public IActionResult Privacy()
         {
             return View();
