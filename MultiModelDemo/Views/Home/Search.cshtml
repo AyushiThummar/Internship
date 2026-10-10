@@ -1,0 +1,59 @@
+﻿@model MultiModelDemo.ViewModels.CourseWiseStudent
+<h2 class="mb-2 bg-warning p-3">Course Details</h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<table class="table table-bordered">
+				<tr>
+					<th>Course ID</th>
+					<th>Course Name</th>
+					<th>Course Duration</th>
+					<th>Course Fee</th>
+				</tr>
+				<tr>
+					<td>@Model.crsDetails.CourseId</td>
+					<td>@Model.crsDetails.CourseName</td>
+					<td>@Model.crsDetails.CourseDuration</td>
+					<td>@Model.crsDetails.CourseFee</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<hr class="mb-4" />
+@if(Model.stuDetails.Count != 0)
+{
+	<h2 class="mb-2 bg-primary text-white p-3">Student Details</h2>
+	<div class="container-fluid bg-light">
+		<div class="row">
+			<div class="col-sm-12 col-lg-12">
+				<table class="table table-bordered">
+					<tr>
+						<th>Student ID</th>
+						<th>Student Name</th>
+						<th>Gender</th>
+						<th>Date Of Birth</th>
+						<th>Contact No.</th>
+					</tr>
+					<tr>
+						@foreach (var stu in @Model.stuDetails)
+						{
+						<tr>
+							<td>@stu.StuId</td>
+							<td>@stu.StuName</td>
+							<td>@stu.StuGender</td>
+							<td>@stu.StuDob</td>
+							<td>@stu.StuPhone</td>
+						</tr>
+					}
+					<tr/>
+				</table>
+			</div>
+		</div>
+	</div>
+}
+else
+{
+	<h2 class="text-danger">No student has enrolled in this course.</h2>
+}
+

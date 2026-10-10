@@ -1,0 +1,55 @@
+﻿@model MultiModelDemo.ViewModels.StudentWithFee
+@{
+	int total = 0;
+<h2 class="mb-2 bg-warning p-3">Student Details</h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<table class="table table-bordered">
+				<tr>
+					<th>Student ID</th>
+					<th>Student Name</th>
+					<th>Gender</th>
+					<th>Date Of Birth</th>
+					<th>Contact No.</th>
+				</tr>
+				<tr>
+					<td>@Model.stuDetails.StuId</td>
+					<td>@Model.stuDetails.StuName</td>
+					<td>@Model.stuDetails.StuGender</td>
+					<td>@Model.stuDetails.StuDob</td>
+					<td>@Model.stuDetails.StuPhone</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<hr mb-2 mt-2 />
+<h2 class="mb-2 bg-primary p-3">Fee Details</h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<table class="table table-striped">
+				<tr>
+					<th>Receipt No.</th>
+					<th>Date</th>
+					<th>Amount</th>
+				</tr>
+				<tr>
+					@foreach (var fee in @Model.feeDetails)
+					{
+					total+=Convert.ToInt32(fee.Amount);
+					<tr>
+						<td>@fee.RecNo</td>
+						<td>@fee.Fdate</td>
+						<td>@fee.Amount</td>
+					</tr>
+				}
+				<tr/>
+				<td colspan="2" class="fw-bold">Total Amount Paid</td>
+				<td class="fw-bold">@total</td>
+			</table>
+		</div>
+	</div>
+</div>
+}
